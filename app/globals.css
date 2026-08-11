@@ -1,0 +1,273 @@
+@import "tailwindcss";
+
+:root {
+  /* Benjamin Moore Swiss Coffee (cream) as the page/card canvas, with a
+     deep forest green - #1B3B2B - carrying every accent (buttons, bullets,
+     links, focus states) instead of the old flat gray/white/teal set. */
+  --bg: #fdfbf8;
+  --surface: #ffffff;
+  --surface-2: #f7f3eb;
+  --text: #1a1d17;
+  --text-dim: #5b6155;
+  --line: #ece6da;
+  --accent: #1b3b2b;
+  --accent-2: #b3661f;
+  --shard: #1b3b2b;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0c0f;
+  --surface: #12151a;
+  --surface-2: #181c22;
+  --text: #e8eaec;
+  --text-dim: #939aa3;
+  --line: #262b32;
+  --accent: #6ee7c0;
+  --accent-2: #f2a65a;
+  --shard: #6ee7c0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Slow-drifting wash of soft, blurred color fields behind the whole page,
+   in place of a flat single-color background - the same trick Apple's
+   marketing pages use so frosted glass panels always have something soft
+   and colorful to refract. Two independently-animated layers (before/
+   after) drifting at different speeds/directions read as one organic,
+   continuously-morphing flow rather than a repeating loop. Fixed +
+   oversized (negative inset) + behind everything (negative z-index) so it
+   never affects layout, never shows a hard edge at the viewport boundary,
+   and never scrolls with content. */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  pointer-events: none;
+  filter: blur(70px);
+  will-change: transform;
+}
+
+body::before {
+  z-index: -2;
+  background-image:
+    radial-gradient(38% 30% at 20% 25%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
+    radial-gradient(34% 28% at 80% 15%, color-mix(in srgb, var(--accent-2) 13%, transparent), transparent 70%),
+    radial-gradient(40% 32% at 12% 80%, color-mix(in srgb, var(--accent-2) 11%, transparent), transparent 70%),
+    radial-gradient(42% 34% at 88% 85%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 70%);
+  animation: bg-drift-1 22s ease-in-out infinite alternate;
+}
+
+body::after {
+  z-index: -1;
+  background-image:
+    radial-gradient(30% 42% at 58% 42%, color-mix(in srgb, var(--surface-2) 75%, var(--accent) 12%), transparent 68%),
+    radial-gradient(26% 36% at 28% 62%, color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 10%), transparent 68%);
+  animation: bg-drift-2 28s ease-in-out infinite alternate;
+}
+
+/* Four waypoints (not just a back-and-forth pendulum between two states)
+   so the drift reads as a loose, wandering path rather than an obvious
+   swing once you watch it for more than a few seconds. */
+@keyframes bg-drift-1 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(9%, -8%) rotate(16deg) scale(1.22);
+  }
+  66% {
+    transform: translate(-7%, 6%) rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-10%, 9%) rotate(-18deg) scale(1.18);
+  }
+}
+
+@keyframes bg-drift-2 {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(-10%, 8%) rotate(-18deg) scale(1.2);
+  }
+  66% {
+    transform: translate(8%, -7%) rotate(12deg) scale(1.08);
+  }
+  100% {
+    transform: translate(11%, -10%) rotate(20deg) scale(1.24);
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.hairline {
+  border-color: var(--line);
+}
+
+.surface {
+  background: var(--surface);
+}
+
+.surface-2 {
+  background: var(--surface-2);
+}
+
+/* Apple-style frosted glass. Translucent surface + backdrop blur/saturate,
+   a hairline border that reads as a light catching the edge, a soft
+   ambient shadow for lift, and an inset top highlight that mimics glass
+   catching light from above - the combination Apple uses across
+   visionOS/macOS panels. Built on color-mix against the existing surface
+   tokens so it adapts automatically between light/dark themes rather than
+   needing separate glass variables per theme. */
+.glass {
+  background: color-mix(in srgb, var(--surface) 62%, transparent);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 20%, transparent) inset,
+    0 14px 28px -16px color-mix(in srgb, #000 16%, transparent),
+    0 2px 6px color-mix(in srgb, #000 4%, transparent);
+}
+
+[data-theme="dark"] .glass {
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 6%, transparent) inset,
+    0 14px 28px -16px color-mix(in srgb, #000 38%, transparent),
+    0 2px 6px color-mix(in srgb, #000 15%, transparent);
+}
+
+/* Fully opaque counterpart to .glass, for the same frosted-edge look
+   (border + layered shadow + inset highlight) without any see-through
+   background. Needed anywhere one glass element visually sits on top of
+   another (e.g. a stack of overlapping cards) - real translucency there
+   would let the covered card bleed through the one covering it. */
+.glass-opaque {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 20%, transparent) inset,
+    0 14px 28px -16px color-mix(in srgb, #000 16%, transparent),
+    0 2px 6px color-mix(in srgb, #000 4%, transparent);
+}
+
+[data-theme="dark"] .glass-opaque {
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 6%, transparent) inset,
+    0 14px 28px -16px color-mix(in srgb, #000 38%, transparent),
+    0 2px 6px color-mix(in srgb, #000 15%, transparent);
+}
+
+/* Stronger/more opaque variant for chrome that needs to stay legible over
+   busy content behind it - nav bars, sticky pills. */
+.glass-nav {
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid var(--line);
+  box-shadow: 0 6px 16px -10px color-mix(in srgb, #000 15%, transparent);
+}
+
+/* Lightest variant for large showcase containers (3D canvases) where full
+   glass would fight the content rendered inside them. */
+.glass-subtle {
+  background: color-mix(in srgb, var(--surface-2) 55%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: 1px solid var(--line);
+}
+
+.glass-hover {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.6s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.6s ease;
+}
+
+.glass-hover:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 20%, transparent) inset,
+    0 20px 36px -18px color-mix(in srgb, #000 20%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--accent) 14%, transparent),
+    0 0 24px -8px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+[data-theme="dark"] .glass-hover:hover {
+  box-shadow:
+    0 1px 1px color-mix(in srgb, #fff 8%, transparent) inset,
+    0 20px 36px -18px color-mix(in srgb, #000 42%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--accent) 20%, transparent),
+    0 0 26px -8px color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+/* Lighter-weight hover lift for buttons/icon-buttons/nav pills, where a
+   full card-style lift+scale would feel oversized - a small translateY
+   plus a shadow bump instead, with a matching press-down on :active. */
+.btn-hover {
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, filter 0.45s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px -10px color-mix(in srgb, #000 18%, transparent);
+}
+
+.btn-hover:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* For solid (non-glass) accent-filled buttons, paired with .btn-hover -
+   deepens the fill color slightly on hover instead of relying on a
+   border/shadow change that wouldn't read against a flat fill. */
+.btn-solid-hover:hover {
+  filter: brightness(0.92);
+}
+
+.text-dim {
+  color: var(--text-dim);
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
