@@ -40,6 +40,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${display.variable} ${body.variable} antialiased`}
       >
+        {/* Exactly viewport-sized and overflow:hidden, so the oversized
+            blurred blobs inside it (see .bg-blob in globals.css) can never
+            inflate the page's own scroll height, no matter how far they
+            bleed past their own edges. */}
+        <div id="bg-wrap" aria-hidden="true">
+          <div className="bg-blob bg-blob-1" />
+          <div className="bg-blob bg-blob-2" />
+        </div>
         <MotionConfig reducedMotion="user">
           <SmoothScroll>{children}</SmoothScroll>
         </MotionConfig>

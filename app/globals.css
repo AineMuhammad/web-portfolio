@@ -46,24 +46,35 @@ body {
 /* Slow-drifting wash of soft, blurred color fields behind the whole page,
    in place of a flat single-color background - the same trick Apple's
    marketing pages use so frosted glass panels always have something soft
-   and colorful to refract. Two independently-animated layers (before/
-   after) drifting at different speeds/directions read as one organic,
-   continuously-morphing flow rather than a repeating loop. Fixed +
-   oversized (negative inset) + behind everything (negative z-index) so it
-   never affects layout, never shows a hard edge at the viewport boundary,
-   and never scrolls with content. */
-body::before,
-body::after {
-  content: "";
+   and colorful to refract. Two independently-animated layers drifting at
+   different speeds/directions read as one organic, continuously-morphing
+   flow rather than a repeating loop.
+
+   The blob layers themselves are intentionally oversized (inset: -20%, so
+   their soft edges never show a hard boundary at the viewport edge), but a
+   position:fixed element larger than the viewport can still inflate the
+   page's own scrollable height in some browsers even though it never
+   visually moves - exactly the "why is there extra scroll" bug this
+   caused. #bg-wrap is the fix: it's sized to *exactly* the viewport
+   (inset: 0) and clips its oversized children, so nothing here can ever
+   contribute scroll height regardless of how far the blobs bleed past
+   their own edges. */
+#bg-wrap {
   position: fixed;
-  inset: -20%;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
   pointer-events: none;
+}
+
+.bg-blob {
+  position: absolute;
+  inset: -20%;
   filter: blur(70px);
   will-change: transform;
 }
 
-body::before {
-  z-index: -2;
+.bg-blob-1 {
   background-image:
     radial-gradient(38% 30% at 20% 25%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%),
     radial-gradient(34% 28% at 80% 15%, color-mix(in srgb, var(--accent-2) 13%, transparent), transparent 70%),
@@ -72,8 +83,7 @@ body::before {
   animation: bg-drift-1 22s ease-in-out infinite alternate;
 }
 
-body::after {
-  z-index: -1;
+.bg-blob-2 {
   background-image:
     radial-gradient(30% 42% at 58% 42%, color-mix(in srgb, var(--surface-2) 75%, var(--accent) 12%), transparent 68%),
     radial-gradient(26% 36% at 28% 62%, color-mix(in srgb, var(--surface-2) 70%, var(--accent-2) 10%), transparent 68%);
