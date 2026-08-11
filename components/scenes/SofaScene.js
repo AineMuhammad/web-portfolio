@@ -13,6 +13,10 @@ const PLAYBACK_SPEED = 2;
 const FOV = 20;
 const MIN_DISTANCE = 3.5;
 const MAX_DISTANCE = 13.5;
+// useGLTF does a plain fetch, so unlike next/image it doesn't pick up
+// basePath automatically - needs it prefixed by hand for the GitHub Pages
+// build (see next.config.mjs).
+const SOFA_GLB_PATH = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/GLB/sofa.glb`;
 
 // sofa.glb ships with 3 baked clips (the chair body/frame + two pillows)
 // that assemble together as one sequence, at 2x speed. `play` is set true
@@ -22,7 +26,7 @@ const MAX_DISTANCE = 13.5;
 // while pieces are still flying into place.
 function SofaModel({ play, onFinished }) {
   const group = useRef();
-  const { scene, animations } = useGLTF("/GLB/sofa.glb");
+  const { scene, animations } = useGLTF(SOFA_GLB_PATH);
   const { actions, mixer } = useAnimations(animations, group);
   const { scale, position } = useCenteredModel(scene, 3, animations);
   const reducedMotion = useReducedMotion();
@@ -147,4 +151,4 @@ export default function SofaScene({ play }) {
   );
 }
 
-useGLTF.preload("/GLB/sofa.glb");
+useGLTF.preload(SOFA_GLB_PATH);

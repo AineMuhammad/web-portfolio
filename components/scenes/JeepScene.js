@@ -15,9 +15,13 @@ const MIN_DISTANCE = 5.2;
 const MAX_DISTANCE = 15.6;
 
 const CAMERA_POSITION = [5.89, 1.99, 0.52];
+// useGLTF does a plain fetch, so unlike next/image it doesn't pick up
+// basePath automatically - needs it prefixed by hand for the GitHub Pages
+// build (see next.config.mjs).
+const JEEP_GLB_PATH = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/GLB/jeep_2021.glb`;
 
 function JeepModel({ colorHex }) {
-  const { scene, materials } = useGLTF("/GLB/jeep_2021.glb");
+  const { scene, materials } = useGLTF(JEEP_GLB_PATH);
 
   // useGLTF's `scene`/`materials` are a shared, module-level cache keyed by
   // URL, so mutating them directly (an earlier version of this component
@@ -103,4 +107,4 @@ export default function JeepScene() {
   );
 }
 
-useGLTF.preload("/GLB/jeep_2021.glb");
+useGLTF.preload(JEEP_GLB_PATH);
