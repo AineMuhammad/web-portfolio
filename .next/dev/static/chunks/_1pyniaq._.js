@@ -76,6 +76,7 @@ const navLinks = [
         label: "Contact"
     }
 ];
+const resumeHref = "/Resume/Resume.pdf";
 function Hero() {
     _s();
     const sectionRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -192,7 +193,7 @@ function Hero() {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 82,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -204,7 +205,7 @@ function Hero() {
                         children: "Ain e Muhammad"
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 94,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -216,24 +217,34 @@ function Hero() {
                                     children: l.label
                                 }, l.href, false, {
                                     fileName: "[project]/components/Hero.js",
-                                    lineNumber: 99,
+                                    lineNumber: 101,
                                     columnNumber: 13
                                 }, this)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: resumeHref,
+                                download: true,
+                                className: "hidden sm:inline px-3 py-1.5 rounded-[10px] text-sm text-dim hover:text-[var(--text)] transition-all duration-300 hover:bg-[color-mix(in_srgb,var(--text)_6%,transparent)]",
+                                children: "Resume"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 109,
+                                columnNumber: 11
+                            }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ThemeToggle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 107,
+                                lineNumber: 116,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 97,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 90,
+                lineNumber: 92,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -251,14 +262,14 @@ function Hero() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 119,
+                                lineNumber: 128,
                                 columnNumber: 11
                             }, this),
                             "Reconstructing 2D into 3D since 2021"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 115,
+                        lineNumber: 124,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -272,12 +283,12 @@ function Hero() {
                                     children: "Senior Software"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.js",
-                                    lineNumber: 124,
+                                    lineNumber: 133,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 123,
+                                lineNumber: 132,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -288,27 +299,27 @@ function Hero() {
                                     children: "Engineer, 3D & AI"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.js",
-                                    lineNumber: 129,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 128,
+                                lineNumber: 137,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 122,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         ref: subtextRef,
                         className: "text-dim max-w-xl mt-8 text-lg leading-relaxed",
-                        children: "I build real-time 3D experiences and the generative AI pipelines behind them, most recently at Sony Immersive Music Studio and ALL3D, where my work shipped product configurators for brands like Walmart."
+                        children: "I build real-time 3D experiences, full-stack web apps, and the generative AI pipelines behind them, most recently at Sony Immersive Music Studio and ALL3D, where my work shipped product configurators for brands like Walmart."
                     }, void 0, false, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 134,
+                        lineNumber: 143,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -325,7 +336,7 @@ function Hero() {
                                 children: "Get in touch"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 141,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -334,19 +345,19 @@ function Hero() {
                                 children: "View work"
                             }, void 0, false, {
                                 fileName: "[project]/components/Hero.js",
-                                lineNumber: 148,
+                                lineNumber: 157,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 140,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 111,
+                lineNumber: 120,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -359,18 +370,18 @@ function Hero() {
                     }
                 }, void 0, false, {
                     fileName: "[project]/components/Hero.js",
-                    lineNumber: 161,
+                    lineNumber: 170,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 157,
+                lineNumber: 166,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Hero.js",
-        lineNumber: 81,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -1555,7 +1566,20 @@ const roles = [
         points: [
             "Built an AI pipeline that turns 2D concept art into fully reconstructed, immersive 3D scenes.",
             "Automated camera and object placement so environments assemble themselves with cinematic precision.",
-            "Connected Blender and Unreal Engine into one workflow, taking AI-generated assets all the way to finished cinematic renders."
+            "Connected Blender and Unreal Engine into one workflow, taking AI-generated assets all the way to finished cinematic renders.",
+            "Built AI-assisted tooling with Claude Code and MCP integrations directly into Blender and Unreal Engine to speed up environment creation, lighting, and cinematography.",
+            "Prototyped in-editor Unreal Engine tooling that turns concept art into 3D assets using local AI inference, giving artists direct control over generation."
+        ]
+    },
+    {
+        period: "JUN 2026 - AUG 2026",
+        org: "HADI (ChatILM.ai)",
+        title: "RAG Evaluation & Benchmark Engineer",
+        points: [
+            "Designed and built an evaluation framework for a production RAG chatbot, defining measurable criteria for retrieval accuracy, citation correctness, and hallucination resistance.",
+            "Built automated data pipelines that structured ~6,200 source records and ~36,500 reference records from external APIs and unstructured PDFs, using column- and font-aware parsing.",
+            "Developed a Python scoring harness that ran benchmark suites against a live LLM API, checking required-fact coverage, forbidden-claim detection, and citation presence.",
+            "Partnered directly with the CTO to scope evaluation methodology and resolve ambiguity in system requirements."
         ]
     },
     {
@@ -1673,7 +1697,7 @@ function Experience() {
                             children: "Experience"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Experience.js",
-                            lineNumber: 124,
+                            lineNumber: 137,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1681,18 +1705,18 @@ function Experience() {
                             children: "Where the pipeline was built."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Experience.js",
-                            lineNumber: 125,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Experience.js",
-                    lineNumber: 123,
+                    lineNumber: 136,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/sections/Experience.js",
-                lineNumber: 122,
+                lineNumber: 135,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1706,7 +1730,7 @@ function Experience() {
                         "aria-hidden": "true"
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Experience.js",
-                        lineNumber: 143,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, this),
                     groups.map((group, gi)=>{
@@ -1724,7 +1748,7 @@ function Experience() {
                                     "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Experience.js",
-                                    lineNumber: 160,
+                                    lineNumber: 173,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1747,19 +1771,19 @@ function Experience() {
                                                         "aria-hidden": "true"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/sections/Experience.js",
-                                                        lineNumber: 176,
+                                                        lineNumber: 189,
                                                         columnNumber: 23
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/Experience.js",
-                                                    lineNumber: 171,
+                                                    lineNumber: 184,
                                                     columnNumber: 19
                                                 }, this),
                                                 period
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/Experience.js",
-                                            lineNumber: 170,
+                                            lineNumber: 183,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1778,14 +1802,14 @@ function Experience() {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 192,
+                                                            lineNumber: 205,
                                                             columnNumber: 23
                                                         }, this),
                                                         "Current role"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/sections/Experience.js",
-                                                    lineNumber: 188,
+                                                    lineNumber: 201,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1801,12 +1825,12 @@ function Experience() {
                                                                 className: "w-full h-full object-contain"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/sections/Experience.js",
-                                                                lineNumber: 200,
+                                                                lineNumber: 213,
                                                                 columnNumber: 25
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 199,
+                                                            lineNumber: 212,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1814,13 +1838,13 @@ function Experience() {
                                                             children: group.org
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 209,
+                                                            lineNumber: 222,
                                                             columnNumber: 21
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/sections/Experience.js",
-                                                    lineNumber: 197,
+                                                    lineNumber: 210,
                                                     columnNumber: 19
                                                 }, this),
                                                 group.roles.length === 1 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1830,7 +1854,7 @@ function Experience() {
                                                             children: group.roles[0].title
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 214,
+                                                            lineNumber: 227,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1845,25 +1869,25 @@ function Experience() {
                                                                             }
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Experience.js",
-                                                                            lineNumber: 224,
+                                                                            lineNumber: 237,
                                                                             columnNumber: 29
                                                                         }, this),
                                                                         pt
                                                                     ]
                                                                 }, pt, true, {
                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                    lineNumber: 223,
+                                                                    lineNumber: 236,
                                                                     columnNumber: 27
                                                                 }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 221,
+                                                            lineNumber: 234,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/sections/Experience.js",
-                                                    lineNumber: 213,
+                                                    lineNumber: 226,
                                                     columnNumber: 21
                                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "mt-1",
@@ -1885,7 +1909,7 @@ function Experience() {
                                                                                     children: role.title
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                                    lineNumber: 246,
+                                                                                    lineNumber: 259,
                                                                                     columnNumber: 33
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1893,13 +1917,13 @@ function Experience() {
                                                                                     children: role.period
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                                    lineNumber: 249,
+                                                                                    lineNumber: 262,
                                                                                     columnNumber: 33
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/components/sections/Experience.js",
-                                                                            lineNumber: 245,
+                                                                            lineNumber: 258,
                                                                             columnNumber: 31
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1915,18 +1939,18 @@ function Experience() {
                                                                                 strokeLinejoin: "round"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/sections/Experience.js",
-                                                                                lineNumber: 259,
+                                                                                lineNumber: 272,
                                                                                 columnNumber: 33
                                                                             }, this)
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Experience.js",
-                                                                            lineNumber: 251,
+                                                                            lineNumber: 264,
                                                                             columnNumber: 31
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                    lineNumber: 239,
+                                                                    lineNumber: 252,
                                                                     columnNumber: 29
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1945,72 +1969,72 @@ function Experience() {
                                                                                             }
                                                                                         }, void 0, false, {
                                                                                             fileName: "[project]/components/sections/Experience.js",
-                                                                                            lineNumber: 277,
+                                                                                            lineNumber: 290,
                                                                                             columnNumber: 39
                                                                                         }, this),
                                                                                         pt
                                                                                     ]
                                                                                 }, pt, true, {
                                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                                    lineNumber: 276,
+                                                                                    lineNumber: 289,
                                                                                     columnNumber: 37
                                                                                 }, this))
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/sections/Experience.js",
-                                                                            lineNumber: 274,
+                                                                            lineNumber: 287,
                                                                             columnNumber: 33
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/sections/Experience.js",
-                                                                        lineNumber: 273,
+                                                                        lineNumber: 286,
                                                                         columnNumber: 31
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/sections/Experience.js",
-                                                                    lineNumber: 268,
+                                                                    lineNumber: 281,
                                                                     columnNumber: 29
                                                                 }, this)
                                                             ]
                                                         }, role.title, true, {
                                                             fileName: "[project]/components/sections/Experience.js",
-                                                            lineNumber: 238,
+                                                            lineNumber: 251,
                                                             columnNumber: 27
                                                         }, this);
                                                     })
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/sections/Experience.js",
-                                                    lineNumber: 234,
+                                                    lineNumber: 247,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/sections/Experience.js",
-                                            lineNumber: 186,
+                                            lineNumber: 199,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/sections/Experience.js",
-                                    lineNumber: 169,
+                                    lineNumber: 182,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, group.org, true, {
                             fileName: "[project]/components/sections/Experience.js",
-                            lineNumber: 154,
+                            lineNumber: 167,
                             columnNumber: 13
                         }, this);
                     })
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Experience.js",
-                lineNumber: 131,
+                lineNumber: 144,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Experience.js",
-        lineNumber: 121,
+        lineNumber: 134,
         columnNumber: 5
     }, this);
 }
@@ -2818,7 +2842,7 @@ function DepthCarousel({ items }) {
         if (e.key === "ArrowRight") step(1);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative",
+        className: "relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 ref: stageRef,
@@ -3116,6 +3140,11 @@ const otherProjects = [
         stack: "React · Three.js · React Three Fiber · GLB parsing"
     },
     {
+        title: "ChatILM.ai RAG Benchmark Suite",
+        body: "An end-to-end benchmark suite for an Islamic-knowledge RAG chatbot, covering retrieval accuracy, citation quality, multi-step reasoning, and hallucination resistance across 10 evaluation categories. Data pipelines parsed 700+ pages of unstructured PDFs into citation-traceable records, scored by an automated pass/fail/needs-review harness.",
+        stack: "Python · RAG Evaluation · LLM API"
+    },
+    {
         title: "Health App Admin Portal",
         body: "An admin portal with drag-and-drop ordering, analytics dashboards, full CRUD operations, and secure image upload workflows.",
         stack: "React · Material UI · SWR"
@@ -3149,7 +3178,7 @@ function Projects() {
                                 children: "Projects"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 67,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -3157,13 +3186,13 @@ function Projects() {
                                 children: "Proof, not just description."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 68,
+                                lineNumber: 73,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Projects.js",
-                        lineNumber: 66,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3174,7 +3203,7 @@ function Projects() {
                                 children: "Featured project"
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 74,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3185,7 +3214,7 @@ function Projects() {
                                         children: "3D Truck Configurator"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Projects.js",
-                                        lineNumber: 76,
+                                        lineNumber: 81,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3198,18 +3227,18 @@ function Projects() {
                                             className: "h-4 w-auto object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/components/sections/Projects.js",
-                                            lineNumber: 80,
+                                            lineNumber: 85,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Projects.js",
-                                        lineNumber: 79,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 75,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3217,7 +3246,7 @@ function Projects() {
                                 children: "An interactive 3D product configurator built with React, Three.js, and React Three Fiber, enabling real-time customization of vehicle color, parts, and environment lighting via PBR materials and HDRI maps. Architected a cross-window postMessage API for seamless third-party iframe embedding — the same pattern behind the enterprise configurators I led at ALL3D for clients including Walmart, Rough Country, and Telescope Casual Furniture. Drag to orbit, tap a swatch to repaint."
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 89,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3227,24 +3256,24 @@ function Projects() {
                                         children: s
                                     }, s, false, {
                                         fileName: "[project]/components/sections/Projects.js",
-                                        lineNumber: 101,
+                                        lineNumber: 106,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 99,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/sections/Projects.js",
-                        lineNumber: 73,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Projects.js",
-                lineNumber: 65,
+                lineNumber: 70,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3252,18 +3281,18 @@ function Projects() {
                 className: "glass-subtle w-[95%] mx-auto mt-6 mb-8 rounded-[10px] overflow-hidden",
                 children: jeepApproaching ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(JeepScene, {}, void 0, false, {
                     fileName: "[project]/components/sections/Projects.js",
-                    lineNumber: 113,
+                    lineNumber: 118,
                     columnNumber: 28
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(JeepFallback, {
                     label: "Scroll to load"
                 }, void 0, false, {
                     fileName: "[project]/components/sections/Projects.js",
-                    lineNumber: 113,
+                    lineNumber: 118,
                     columnNumber: 44
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/sections/Projects.js",
-                lineNumber: 109,
+                lineNumber: 114,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3277,7 +3306,7 @@ function Projects() {
                             children: "Generative 3D"
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 118,
+                            lineNumber: 123,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3288,7 +3317,7 @@ function Projects() {
                                     children: "Generative 3D Environment Reconstruction Platform"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Projects.js",
-                                    lineNumber: 120,
+                                    lineNumber: 125,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3301,18 +3330,18 @@ function Projects() {
                                         className: "w-full h-full object-contain"
                                     }, void 0, false, {
                                         fileName: "[project]/components/sections/Projects.js",
-                                        lineNumber: 124,
+                                        lineNumber: 129,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Projects.js",
-                                    lineNumber: 123,
+                                    lineNumber: 128,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 119,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3320,7 +3349,7 @@ function Projects() {
                             children: "Built during my internship at Sony Immersive Music Studio: an AI pipeline that reconstructs immersive 3D scenes straight from 2D concept art, with automated camera placement and cinematic rendering in Unreal Engine."
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 133,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3330,23 +3359,23 @@ function Projects() {
                                     children: s
                                 }, s, false, {
                                     fileName: "[project]/components/sections/Projects.js",
-                                    lineNumber: 141,
+                                    lineNumber: 146,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 139,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/sections/Projects.js",
-                    lineNumber: 117,
+                    lineNumber: 122,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/sections/Projects.js",
-                lineNumber: 116,
+                lineNumber: 121,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3362,22 +3391,22 @@ function Projects() {
                                     children: "More projects"
                                 }, void 0, false, {
                                     fileName: "[project]/components/sections/Projects.js",
-                                    lineNumber: 161,
+                                    lineNumber: 166,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/sections/Projects.js",
-                                lineNumber: 160,
+                                lineNumber: 165,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 159,
+                            lineNumber: 164,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Projects.js",
-                        lineNumber: 158,
+                        lineNumber: 163,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Reveal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -3387,24 +3416,24 @@ function Projects() {
                             items: otherProjects
                         }, void 0, false, {
                             fileName: "[project]/components/sections/Projects.js",
-                            lineNumber: 166,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/sections/Projects.js",
-                        lineNumber: 165,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/sections/Projects.js",
-                lineNumber: 157,
+                lineNumber: 162,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/sections/Projects.js",
-        lineNumber: 64,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 }
@@ -3458,7 +3487,11 @@ const groups = [
             "Deep Learning",
             "Pandas",
             "NumPy",
-            "Matplotlib"
+            "Matplotlib",
+            "RAG Pipeline Auditing",
+            "Hallucination & Citation Testing",
+            "Automated Benchmark Design",
+            "LLM-as-System Evaluation"
         ]
     },
     {

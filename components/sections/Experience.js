@@ -16,6 +16,19 @@ const roles = [
       "Built an AI pipeline that turns 2D concept art into fully reconstructed, immersive 3D scenes.",
       "Automated camera and object placement so environments assemble themselves with cinematic precision.",
       "Connected Blender and Unreal Engine into one workflow, taking AI-generated assets all the way to finished cinematic renders.",
+      "Built AI-assisted tooling with Claude Code and MCP integrations directly into Blender and Unreal Engine to speed up environment creation, lighting, and cinematography.",
+      "Prototyped in-editor Unreal Engine tooling that turns concept art into 3D assets using local AI inference, giving artists direct control over generation.",
+    ],
+  },
+  {
+    period: "JUN 2026 - AUG 2026",
+    org: "HADI (ChatILM.ai)",
+    title: "RAG Evaluation & Benchmark Engineer",
+    points: [
+      "Designed and built an evaluation framework for a production RAG chatbot, defining measurable criteria for retrieval accuracy, citation correctness, and hallucination resistance.",
+      "Built automated data pipelines that structured ~6,200 source records and ~36,500 reference records from external APIs and unstructured PDFs, using column- and font-aware parsing.",
+      "Developed a Python scoring harness that ran benchmark suites against a live LLM API, checking required-fact coverage, forbidden-claim detection, and citation presence.",
+      "Partnered directly with the CTO to scope evaluation methodology and resolve ambiguity in system requirements.",
     ],
   },
   {

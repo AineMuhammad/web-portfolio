@@ -176,7 +176,7 @@ function DepthCarousel({ items }) {
   }
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div
         ref={stageRef}
         role="region"

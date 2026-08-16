@@ -43,6 +43,11 @@ const otherProjects = [
     stack: "React · Three.js · React Three Fiber · GLB parsing",
   },
   {
+    title: "ChatILM.ai RAG Benchmark Suite",
+    body: "An end-to-end benchmark suite for an Islamic-knowledge RAG chatbot, covering retrieval accuracy, citation quality, multi-step reasoning, and hallucination resistance across 10 evaluation categories. Data pipelines parsed 700+ pages of unstructured PDFs into citation-traceable records, scored by an automated pass/fail/needs-review harness.",
+    stack: "Python · RAG Evaluation · LLM API",
+  },
+  {
     title: "Health App Admin Portal",
     body: "An admin portal with drag-and-drop ordering, analytics dashboards, full CRUD operations, and secure image upload workflows.",
     stack: "React · Material UI · SWR",

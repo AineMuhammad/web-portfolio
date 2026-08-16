@@ -14,6 +14,8 @@ const navLinks = [
   { href: "#contact", label: "Contact" },
 ];
 
+const resumeHref = "/Resume/Resume.pdf";
+
 export default function Hero() {
   const sectionRef = useRef(null);
   const contentRef = useRef(null);
@@ -104,6 +106,13 @@ export default function Hero() {
               {l.label}
             </a>
           ))}
+          <a
+            href={resumeHref}
+            download
+            className="hidden sm:inline px-3 py-1.5 rounded-[10px] text-sm text-dim hover:text-[var(--text)] transition-all duration-300 hover:bg-[color-mix(in_srgb,var(--text)_6%,transparent)]"
+          >
+            Resume
+          </a>
           <ThemeToggle />
         </div>
       </nav>
@@ -132,10 +141,10 @@ export default function Hero() {
           </span>
         </h1>
         <p ref={subtextRef} className="text-dim max-w-xl mt-8 text-lg leading-relaxed">
-          I build real-time 3D experiences and the generative AI pipelines
-          behind them, most recently at Sony Immersive Music Studio and
-          ALL3D, where my work shipped product configurators for brands
-          like Walmart.
+          I build real-time 3D experiences, full-stack web apps, and the
+          generative AI pipelines behind them, most recently at Sony
+          Immersive Music Studio and ALL3D, where my work shipped product
+          configurators for brands like Walmart.
         </p>
         <div ref={ctaRef} className="flex flex-wrap gap-3 mt-10 pointer-events-auto">
           <a

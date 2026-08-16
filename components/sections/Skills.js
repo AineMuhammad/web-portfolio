@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const groups = [
   {
     tag: "AI & Machine Learning",
-    items: ["Python (Advanced)", "PyTorch", "TensorFlow", "OpenCV", "Computer Vision", "Deep Learning", "Pandas", "NumPy", "Matplotlib"],
+    items: ["Python (Advanced)", "PyTorch", "TensorFlow", "OpenCV", "Computer Vision", "Deep Learning", "Pandas", "NumPy", "Matplotlib", "RAG Pipeline Auditing", "Hallucination & Citation Testing", "Automated Benchmark Design", "LLM-as-System Evaluation"],
   },
   {
     tag: "Generative AI & Spatial Models",
